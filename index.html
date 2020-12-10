@@ -19,8 +19,6 @@
     <script src="js/ploty.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async=""></script>
     <script src="https://code.jquery.com/jquery-3.3.0.min.js"></script>
-    
-     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -47,13 +45,48 @@
         <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
                 <h1 class="mx-auto my-0 text-uppercase">Proyecto Final</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Debido a que en Corriente alterna se requiere realizar cálculos con números complejos.</h2>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Este proyecto consistirá en realizar una calculadora de números complejos, que sume, reste, multiplique y divida, asi como tambien un conversor de numeros polares a rectangular y de rectangular a polar. Tambien un gráficador que muestre
-                    estos resultado. </h2>
-                <a class="btn btn-primary js-scroll-trigger" href="#caluladora">Start!!!</a>
+                <br><br><br> <br>
+                <div class="text-white-50">
+                    <h3 class="text-white-50 mx-auto mt-2 mb-5">Acerca del proyecto</h3>
+                    Debido a la importancia de los números complejos en el análisis de corriente alterna, es que el proyecto final de la materia de circuitos electrónicos consiste en la elaboración de una calculadora que sea capaz de resolver las principales operaciones
+                    en las expresiones complejas: suma, resta, multiplicación y división. Así como también, un conversor que transforme un número complejo expresado en una forma rectangular a su forma polar y viceversa. Por último, la calculadora deberá
+                    incluir un graficador que muestre estos resultados.
+                </div>
+                <br>
+
+
+                <a class="btn btn-primary js-scroll-trigger" href="#inf0">Start!!!</a>
             </div>
         </div>
+        <div class="masthead2"> </div>
     </header>
+
+    <div class="masthead" id="inf0">
+
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <div class="text-white-50">
+                    <h3 class="text-white-50 mx-auto mt-2 mb-5">Análisis de fasores en corriente alterna</h3>
+                    La corriente alterna es un flujo de carga eléctrica en la que la magnitud y el sentido varían con respecto al tiempo y de forma periódica. Para representar su propagación a través de un circuito su utiliza una onda oscilatoria senoidal. Dentro de estos
+                    circuitos, la presencia de elementos pasivos como inductores y condensadores que almacenan energía al ser sometidos por una tensión eléctrica (voltaje), provocarán un cambio de fase en la onda. Para calcular la diferencia de fase entre
+                    la corriente y el voltaje su utilizan los fasores, un vector dibujado de tal manera que su módulo está relacionado con la amplitud de la onda sinusoidal representada, y su posición angular con respecto a otros fasores está relacionada
+                    con la diferencia de fase. Sin embargo, debido a la propia notación vectorial, el sistema de números reales resulta insuficiente para el correcto análisis del cálculo entre fasores. Por lo tanto, se opta por emplear un sistema de números
+                    complejos en el que se puede sumar, restar y usar exactamente de la misma manera que en álgebra elemental.
+                </div>
+                <br><br><br><br>
+                <div class="text-white-50">
+                    <h3 class="text-white-50 mx-auto mt-2 mb-5">¿Qué es un número complejo?</h3>
+                    Un número complejo está definido por una parte real y una parte imaginaria: z = a + bi, en donde “a” representa la parte real, y “b” la parte imaginaria denotada por una unidad imaginaria “i” que a su vez representa la raíz cuadrada de menos uno. En el
+                    análisis de circuitos se sustituye la “i” por la “j” debido a que la corriente eléctrica ya utiliza la “i” para denotar sus unidades. A esta notación se le conoce como forma rectangular y representa un punto en un plano bidimensional
+                    referenciado a dos ejes distintos. El eje horizontal se denomina eje real, mientras que el eje vertical se denomina eje imaginario. Otra forma de expresar un número complejo y que resulta sumamente útil para el cálculo fasorial, es
+                    mediante su forma polar: z = r ⊾ϕ, en donde “r” es la magnitud del fasor y el ángulo fi “⊾ϕ” es la fase de la onda.
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
 
     <!-- Calculadora-->
     <section class="about-section text-center" id="caluladora">
@@ -117,7 +150,7 @@
                                                             <td>
                                                                 <!-- real 2 y signo -->
                                                                 <span id="negativo1b" style="visibility:hidden; padding: 0 2px 0 2px;">-</span>
-                                                                <input onfocus="this.select()" type="text" class="enjoy-css" size="6" name="a21" value="3.33" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
+                                                                <input onfocus="this.select()" type="text" class="enjoy-css" size="6" name="a21" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
                                                             </td>
                                                             <td>
                                                                 <!-- signo imaginario -->
@@ -345,7 +378,7 @@
                                             <tr>
                                                 <td>
                                                     <span id="rect1" style="visibility:hidden; padding: 0 2px 0 2px;">-</span>
-                                                    <input onfocus="this.select()" type="text" class="enjoy-css" size="6" name="rect11" value="3.33" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
+                                                    <input onfocus="this.select()" type="text" class="enjoy-css" size="6" name="rect11" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
                                                 </td>
                                                 <td>
                                                     <span id="rect2b" style="display:none; margin:0 5px 0 5px; text-align: center;">-</span>
@@ -525,7 +558,7 @@
                                     <i class="text-primary mb-2 "><img src="assets/img/mascota.png " alt="mascota " width="100 " height="80 " viewBox=' -4 -4 8 8 ' ></i>
                                     <h4 class="text-uppercase m-0 ">Integrantes</h4>
                                     <hr class="my-4 " />
-                                    <div class="small text-black-50 ">Oscar González Esparza <br>Marco Antonio Aguayo Garza</div>
+                                    <div class="small text-black-50 ">Oscar González Esparza <br>Marco Antonio Aguayo Garza <br>David Moisés Huerta Salas</div>
                                 </div>
                             </div>
                         </div>
